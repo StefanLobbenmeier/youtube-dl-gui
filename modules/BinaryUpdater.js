@@ -58,7 +58,7 @@ class BinaryUpdater {
 
     async getRemoteVersion() {
         try {
-            const url = process.platform === "win32" ? "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe" : "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
+            const url = this.getDownloadUrl();
             await axios.get(url, {
                   responseType: 'document',
                   maxRedirects: 0,
@@ -84,7 +84,16 @@ class BinaryUpdater {
         return null;
     }
 
-    //Returns the currently downloaded version of yt-dlp
+    getDownloadUrl() {
+        switch (process.platform) {
+            case "win32":
+                return "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe";
+            default:
+                return "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp";
+        }
+    }
+
+//Returns the currently downloaded version of yt-dlp
    async getLocalVersion() {
         let data;
         try {
