@@ -88,6 +88,8 @@ class BinaryUpdater {
         switch (process.platform) {
             case "win32":
                 return "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe";
+            case "darwin":
+                return "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos";
             default:
                 return "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp";
         }
