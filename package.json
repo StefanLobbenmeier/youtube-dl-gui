@@ -96,7 +96,8 @@
           "arch": [
             "x64",
             "arm64"
-          ]
+          ],
+          "productName": "Open Video Downloader ${arch}"
         }
       ],
       "icon": "renderer/img/icon.icns",
