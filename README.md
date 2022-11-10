@@ -34,6 +34,8 @@ Still haven't found your answer? [Open up an issue](https://github.com/jely2002/
 ## Building from source
 First, clone the repository using `git clone https://github.com/jely2002/youtube-dl-gui.git`.
 
+Make sure you are using node 18.
+
 Then navigate to the directory and install the npm modules by executing: `npm install`.
 
 The last step is to build using electron-builder [(documentation)](https://www.electron.build/cli). For example, the command to build a windows installer is: `npx electron-builder --win`. The output files can be found in the 'dist' folder.
