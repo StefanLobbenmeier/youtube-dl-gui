@@ -172,13 +172,13 @@ class DownloadQuery extends Query {
                 let liveDataArray = liveData.split(" ").filter((el) => {
                     return el !== ""
                 });
-                if (liveDataArray.length > 10) return;
+                if (liveDataArray.length > 12) return;
                 liveDataArray = liveDataArray.filter((el) => {
                     return el !== "\n"
                 });
                 let percentage = liveDataArray[1];
-                let speed = liveDataArray[5];
-                let eta = liveDataArray[7];
+                let speed = liveDataArray[6];
+                let eta = liveDataArray[8];
                 this.progressBar.updateDownload(percentage, eta, speed, this.video.audioOnly ? true : this.video.downloadingAudio);
             }));
         } catch (exception) {
