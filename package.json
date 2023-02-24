@@ -2,9 +2,11 @@
   "name": "youtube-dl-gui",
   "version": "2.5.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc && copyfiles -f renderer/renderer.html build",
+    "start": "npm run compile && electron ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,8 @@
   },
   "homepage": "https://github.com/StefanLobbenmeier/youtube-dl-gui#readme",
   "devDependencies": {
-    "electron": "^23.1.1"
-  },
-  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "electron": "^23.1.1",
     "typescript": "^4.9.5"
   }
 }
