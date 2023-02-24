@@ -18,5 +18,8 @@
   "homepage": "https://github.com/StefanLobbenmeier/youtube-dl-gui#readme",
   "devDependencies": {
     "electron": "^23.1.1"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
   }
 }
