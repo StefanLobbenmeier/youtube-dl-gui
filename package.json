@@ -1,0 +1,22 @@
+{
+  "name": "youtube-dl-gui",
+  "version": "2.5.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanLobbenmeier/youtube-dl-gui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefanLobbenmeier/youtube-dl-gui/issues"
+  },
+  "homepage": "https://github.com/StefanLobbenmeier/youtube-dl-gui#readme",
+  "devDependencies": {
+    "electron": "^23.1.1"
+  }
+}
