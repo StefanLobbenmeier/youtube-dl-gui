@@ -1,12 +1,23 @@
-const axios = require("axios");
-const fs = require("fs");
-const path = require('path');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
-const os = require("os");
-const AdmZip = require("adm-zip");
-const Utils = require('./Utils');
-const {Agent} = require("https");
+import axios from "axios";
+
+import fs from "fs";
+
+import path from "path";
+
+import util from "util";
+
+import os from "os";
+
+import AdmZip from "adm-zip";
+
+import {exec as exec0} from "child_process";
+
+import Utils from "./Utils";
+
+import {Agent} from "https";
+
+const exec = util.promisify(exec0.exec);
+
 
 class FfmpegUpdater {
 

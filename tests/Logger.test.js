@@ -1,6 +1,8 @@
-const fs = require("fs").promises;
-const {dialog} = require("electron");
-const Logger =  require("../modules/persistence/Logger");
+import {promises as fs} from "fs";
+
+import {dialog} from "electron";
+
+import Logger from "../modules/persistence/Logger";
 
 const downloadPath = "a/download/path";
 const savePath = "path/to/log";

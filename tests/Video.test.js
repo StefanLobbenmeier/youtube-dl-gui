@@ -1,5 +1,6 @@
-const Video = require("../modules/types/Video");
-const Format = require("../modules/types/Format");
+import Format from "../modules/types/Format";
+
+import Video from "../modules/types/Video";
 
 describe('select highest quality', () => {
    it('Sorts the formats high to low', () => {

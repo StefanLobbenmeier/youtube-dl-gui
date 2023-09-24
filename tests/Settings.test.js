@@ -1,6 +1,9 @@
-const fs = require('fs').promises;
-const os = require('os');
-const { globalShortcut, clipboard } = require('electron');
+import os from "os";
+
+import {promises as fs} from "fs";
+
+
+import Settings from "../modules/persistence/Settings";
 
 jest.mock('electron', () => ({
   clipboard: {
@@ -12,8 +15,6 @@ jest.mock('electron', () => ({
     register: jest.fn(),
   }
 }));
-
-const Settings = require('../modules/persistence/Settings');
 const env = {version: '2.0.0-test1', app: {getPath: jest.fn().mockReturnValue('test/path')}};
 const defaultSettingsInstance = new Settings({settings: 'tests/test-settings.json'}, env, 'none', 'none', 'test/path', '', '', true, false, true, 'spoof', false, false, true, '%(title).200s-(%(height)sp%(fps).0d).%(ext)s', '%(title).200s-(%(height)sp%(fps).0d).%(ext)s', 'click', '49', 8, 6, 2, true, 'video', true, 'C:\\Users\\user\\cookies.txt', false, '', '', 'https://sponsor.ajay.app', true, false, false, false, false, true, 'dark');
 const defaultSettings = {

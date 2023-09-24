@@ -1,5 +1,6 @@
-const ClipboardWatcher = require("../modules/ClipboardWatcher");
-const { clipboard } = require('electron');
+import ClipboardWatcher from "../modules/ClipboardWatcher";
+
+import {clipboard} from "electron";
 
 
 jest.mock('electron', () => ({

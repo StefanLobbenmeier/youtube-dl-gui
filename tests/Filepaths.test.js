@@ -1,7 +1,8 @@
-const fs = require("fs");
-const Filepaths = require("../modules/Filepaths");
-const mkdirp = require("mkdirp");
-const path = require("path");
+import fs from "fs";
+
+import Filepaths from "../modules/Filepaths";
+
+import path from "path";
 
 jest.mock('mkdirp');
 

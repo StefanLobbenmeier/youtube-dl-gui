@@ -1,9 +1,14 @@
-const Bottleneck = require("bottleneck");
-const Filepaths = require("./Filepaths");
-const Settings = require("./persistence/Settings");
-const DetectPython = require("./DetectPython");
-const Logger = require("./persistence/Logger");
-const fs = require("fs").promises;
+import Bottleneck from "bottleneck";
+
+import Filepaths from "./Filepaths";
+
+import Settings from "./persistence/Settings";
+
+import DetectPython from "./DetectPython";
+
+import Logger from "./persistence/Logger";
+
+import {promises as fs} from "fs";
 
 class Environment {
     constructor(app) {

@@ -1,6 +1,9 @@
-const Format = require("./types/Format");
-const crypto = require('crypto');
-const ISO6392 = require('iso-639-2');
+import ISO6392 from "iso-639-2";
+
+import crypto from "crypto";
+
+import Format from "./types/Format";
+
 const channelRegex = /(?:https|http):\/\/(?:[\w]+\.)?youtube\.com\/(?:c\/|channel\/|user\/)([a-zA-Z0-9-]{1,})/;
 
 class Utils {

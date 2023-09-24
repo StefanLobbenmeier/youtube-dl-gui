@@ -1,4 +1,5 @@
-const { clipboard } = require('electron');
+import {clipboard} from "electron";
+
 
 class ClipboardWatcher {
     constructor(win, env) {

@@ -1,5 +1,6 @@
-const ErrorHandler = require("../modules/exceptions/ErrorHandler");
-const Utils = require("../modules/Utils");
+import ErrorHandler from "../modules/exceptions/ErrorHandler";
+
+import Utils from "../modules/Utils";
 
 describe('raiseError', () => {
    it('does not raise an error if the video type is playlist', async () => {

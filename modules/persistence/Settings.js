@@ -1,6 +1,8 @@
-const os = require("os");
-const { globalShortcut, clipboard } = require('electron');
-const fs = require("fs").promises;
+import os from "os";
+
+import {clipboard, globalShortcut} from "electron";
+
+import {promises as fs} from "fs";
 
 class Settings {
     constructor(

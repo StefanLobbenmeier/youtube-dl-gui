@@ -1,4 +1,4 @@
-const fs = require('fs').promises
+import {promises as fs} from "fs";
 
 class TaskList {
     constructor(paths, manager) {

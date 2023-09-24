@@ -1,4 +1,4 @@
-const InfoQuery = require("../modules/info/InfoQuery");
+import InfoQuery from "../modules/info/InfoQuery";
 
 describe('Connect the InfoQuery', () => {
     beforeEach(() => {

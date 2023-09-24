@@ -1,4 +1,4 @@
-const execa = require("execa");
+import execa from "execa";
 
 class DetectPython {
     async test(command) {

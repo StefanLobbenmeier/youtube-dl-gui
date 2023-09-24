@@ -1,6 +1,8 @@
-const Utils = require("../Utils");
-const Path = require("path");
-const fs = require("fs").promises;
+import Utils from "../Utils";
+
+import Path from "path";
+
+import {promises as fs} from "fs";
 
 class ErrorHandler {
     constructor(win, queryManager, env) {

@@ -1,5 +1,6 @@
-const TaskList =  require('../modules/persistence/TaskList')
-const fs = require('fs').promises;
+import {promises as fs} from "fs";
+
+import TaskList from "../modules/persistence/TaskList";
 
 beforeEach(() => {
     jest.clearAllMocks();

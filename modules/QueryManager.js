@@ -1,18 +1,32 @@
-const InfoQuery = require("./info/InfoQuery");
-const Video = require("./types/Video");
-const Utils = require("./Utils");
-const InfoQueryList = require("./info/InfoQueryList");
-const ProgressBar = require("./types/ProgressBar");
-const DownloadQuery = require("./download/DownloadQuery");
-const { shell, dialog } = require('electron');
-const axios = require('axios')
-const path = require('path')
-const url = require('url');
-const fs = require("fs");
-const SizeQuery = require("./size/SizeQuery");
-const DownloadQueryList = require("./download/DownloadQueryList");
-const Format = require("./types/Format");
-const DoneAction = require("./DoneAction");
+import DoneAction from "./DoneAction";
+
+import Format from "./types/Format";
+
+import DownloadQueryList from "./download/DownloadQueryList";
+
+import SizeQuery from "./size/SizeQuery";
+
+import fs from "fs";
+
+import url from "url";
+
+import path from "path";
+
+import axios from "axios";
+
+import {dialog, shell} from "electron";
+
+import DownloadQuery from "./download/DownloadQuery";
+
+import ProgressBar from "./types/ProgressBar";
+
+import InfoQueryList from "./info/InfoQueryList";
+
+import Utils from "./Utils";
+
+import Video from "./types/Video";
+
+import InfoQuery from "./info/InfoQuery";
 
 class QueryManager {
     constructor(window, environment) {

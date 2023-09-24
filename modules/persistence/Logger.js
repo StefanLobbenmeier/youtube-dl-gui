@@ -1,6 +1,8 @@
-const {dialog} = require("electron");
-const path = require("path");
-const fs = require("fs");
+import {dialog} from "electron";
+
+import path from "path";
+
+import fs from "fs";
 
 class Logger {
     constructor(environment) {

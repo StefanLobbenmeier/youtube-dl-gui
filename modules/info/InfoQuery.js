@@ -1,4 +1,4 @@
-const Query = require("../types/Query");
+import Query from "../types/Query";
 
 class InfoQuery extends Query {
     constructor(url, identifier, environment) {

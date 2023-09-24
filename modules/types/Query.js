@@ -1,5 +1,6 @@
-const execa = require('execa');
-const UserAgent = require('user-agents');
+import execa from "execa";
+
+import UserAgent from "user-agents";
 
 class Query {
     constructor(environment, identifier) {

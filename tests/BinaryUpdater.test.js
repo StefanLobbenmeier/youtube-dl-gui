@@ -1,7 +1,11 @@
-const BinaryUpdater = require("../modules/BinaryUpdater");
-const fs = require("fs");
-const axios = require("axios");
-const { PassThrough } = require('stream');
+import BinaryUpdater from "../modules/BinaryUpdater";
+
+import fs from "fs";
+
+import axios from "axios";
+
+import {PassThrough} from "stream";
+
 
 beforeEach(() => {
     jest.clearAllMocks();

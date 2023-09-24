@@ -1,8 +1,14 @@
-const axios = require("axios");
-const fs = require("fs");
-const util = require('util');
-const Utils = require('./Utils');
-const exec = util.promisify(require('child_process').exec);
+import axios from "axios";
+
+import fs from "fs";
+
+import util from "util";
+
+import Utils from "./Utils";
+
+import {exec as exec0} from "child_process";
+
+const exec = util.promisify(exec0.exec);
 
 class BinaryUpdater {
 

@@ -1,4 +1,4 @@
-const Format = require("../modules/types/Format");
+import Format from "../modules/types/Format";
 
 describe('Get display name from format', () => {
     it('gets the display name with fps', () => {

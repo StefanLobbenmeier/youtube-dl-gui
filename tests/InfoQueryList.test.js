@@ -1,5 +1,6 @@
-const InfoQueryList = require("../modules/info/InfoQueryList");
-const video = require('../modules/types/Video');
+import InfoQueryList from "../modules/info/InfoQueryList";
+
+import video from "../modules/types/Video";
 
 describe("create video", () => {
    beforeEach(() => {

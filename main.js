@@ -1,14 +1,24 @@
-const { app, BrowserWindow, ipcMain, dialog, Menu, shell, clipboard } = require('electron');
-const Environment = require('./modules/Environment');
-const path = require('path');
-const QueryManager = require("./modules/QueryManager");
-const ErrorHandler = require("./modules/exceptions/ErrorHandler");
-const BinaryUpdater = require("./modules/BinaryUpdater");
-const AppUpdater = require("./modules/AppUpdater");
-const TaskList = require("./modules/persistence/TaskList");
-const DoneAction = require("./modules/DoneAction");
-const ClipboardWatcher = require("./modules/ClipboardWatcher");
-const FfmpegUpdater = require('./modules/FfmpegUpdater');
+import {app, BrowserWindow, clipboard, dialog, ipcMain, Menu, shell} from "electron";
+
+import Environment from "./modules/Environment";
+
+import path from "path";
+
+import QueryManager from "./modules/QueryManager";
+
+import ErrorHandler from "./modules/exceptions/ErrorHandler";
+
+import BinaryUpdater from "./modules/BinaryUpdater";
+
+import AppUpdater from "./modules/AppUpdater";
+
+import TaskList from "./modules/persistence/TaskList";
+
+import DoneAction from "./modules/DoneAction";
+
+import ClipboardWatcher from "./modules/ClipboardWatcher";
+
+import FfmpegUpdater from "./modules/FfmpegUpdater";
 
 let win
 let env

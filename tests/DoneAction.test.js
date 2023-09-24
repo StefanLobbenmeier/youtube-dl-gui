@@ -1,5 +1,6 @@
-const execa = require('execa');
-const DoneAction = require("../modules/DoneAction");
+import execa from "execa";
+
+import DoneAction from "../modules/DoneAction";
 
 jest.mock('execa');
 

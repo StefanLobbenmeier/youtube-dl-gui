@@ -1,5 +1,6 @@
-const execa = require('execa');
-const DetectPython = require("../modules/DetectPython");
+import execa from "execa";
+
+import DetectPython from "../modules/DetectPython";
 
 jest.mock('execa');
 

@@ -1,7 +1,11 @@
-const UserAgent = require('user-agents');
-const Query = require("../modules/types/Query");
-const execa = require('execa');
-const { PassThrough } = require('stream');
+import UserAgent from "user-agents";
+
+import Query from "../modules/types/Query";
+
+import execa from "execa";
+
+import {PassThrough} from "stream";
+
 
 jest.mock('user-agents');
 jest.mock('execa');

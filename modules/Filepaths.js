@@ -1,6 +1,8 @@
-const path = require('path');
-const mkdirp = require("mkdirp");
-const fs = require("fs");
+import path from "path";
+
+import mkdirp from "mkdirp";
+
+import fs from "fs";
 
 class Filepaths {
     constructor(app, env) {

@@ -1,4 +1,6 @@
-const Utils = require("../modules/Utils");
+import isoNames from "./iso-test.json";
+
+import Utils from "../modules/Utils";
 
 describe('isYouTubeChannel', () => {
     it('detects a user link', () => {
@@ -42,7 +44,6 @@ describe('sortSubtitles', () => {
 });
 
 describe('getIsoFromName', () => {
-    const isoNames = require('./iso-test.json');
     for(const isoName of isoNames) {
         expect(Utils.getNameFromISO(isoName.iso)).toBe(isoName.name);
     }

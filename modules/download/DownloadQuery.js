@@ -1,8 +1,12 @@
-const Query = require("../types/Query")
-const path = require("path")
-const fs = require("fs");
-const Utils = require("../Utils")
-const console = require("console");
+import Query from "../types/Query";
+
+import path from "path";
+
+import fs from "fs";
+
+import Utils from "../Utils";
+
+import console from "console";
 
 class DownloadQuery extends Query {
     constructor(url, video, environment, progressBar, playlistMeta) {

@@ -1,5 +1,7 @@
-const Utils = require("./Utils");
-const { autoUpdater } = require("electron-updater");
+import Utils from "./Utils";
+
+import {autoUpdater} from "electron-updater";
+
 
 class AppUpdater {
     constructor(env, win) {

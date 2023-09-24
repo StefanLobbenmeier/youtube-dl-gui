@@ -1,5 +1,6 @@
-const Query = require("../types/Query");
-const Utils = require("../Utils");
+import Query from "../types/Query";
+
+import Utils from "../Utils";
 
 class SizeQuery extends Query {
     constructor(video, audioOnly, videoOnly, format, environment) {

@@ -1,8 +1,10 @@
-const FfmpegUpdater = require("../modules/FfmpegUpdater");
-const fs = require("fs");
-const axios = require("axios");
-const { PassThrough } = require('stream');
-const os = require('os');
+import FfmpegUpdater from "../modules/FfmpegUpdater";
+
+import fs from "fs";
+
+import axios from "axios";
+
+import os from "os";
 
 beforeEach(() => {
     jest.clearAllMocks();

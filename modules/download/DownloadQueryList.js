@@ -1,6 +1,8 @@
-const DownloadQuery = require('./DownloadQuery');
-const ProgressBar = require("../types/ProgressBar");
-const Utils = require("../Utils");
+import DownloadQuery from "./DownloadQuery";
+
+import ProgressBar from "../types/ProgressBar";
+
+import Utils from "../Utils";
 
 class DownloadQueryList {
     constructor(videos, playlistMetadata, environment, manager, progressBar) {

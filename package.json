@@ -2,6 +2,7 @@
   "name": "youtube-dl-gui",
   "version": "2.4.10",
   "description": "Open Video Downloader",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "electron . --dev",

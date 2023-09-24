@@ -1,5 +1,6 @@
-const Utils = require("../Utils");
-const path = require("path");
+import Utils from "../Utils";
+
+import path from "path";
 
 class Video {
     constructor(url, type, environment) {

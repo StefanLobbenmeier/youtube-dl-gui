@@ -1,6 +1,8 @@
-const InfoQuery = require('./InfoQuery');
-const Video = require('../types/Video');
-const Utils = require("../Utils");
+import InfoQuery from "./InfoQuery";
+
+import Video from "../types/Video";
+
+import Utils from "../Utils";
 
 class InfoQueryList {
     constructor(query, environment, progressBar) {
