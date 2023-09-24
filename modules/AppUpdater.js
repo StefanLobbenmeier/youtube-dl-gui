@@ -68,4 +68,5 @@ class AppUpdater {
     }
 
 }
-module.exports = AppUpdater;
+
+export default AppUpdater;

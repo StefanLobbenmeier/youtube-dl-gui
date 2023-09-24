@@ -64,4 +64,5 @@ class Environment {
         this.metadataLimiter.updateSettings(settings);
     }
 }
-module.exports = Environment;
+
+export default Environment;

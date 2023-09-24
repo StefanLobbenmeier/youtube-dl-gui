@@ -251,4 +251,5 @@ class DownloadQuery extends Query {
         }
     }
 }
-module.exports = DownloadQuery;
+
+export default DownloadQuery;

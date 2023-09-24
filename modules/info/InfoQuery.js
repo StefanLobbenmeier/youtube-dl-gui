@@ -23,4 +23,5 @@ class InfoQuery extends Query {
         }
     }
 }
-module.exports = InfoQuery;
+
+export default InfoQuery;

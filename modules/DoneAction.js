@@ -46,4 +46,4 @@ class DoneAction {
 
 }
 
-module.exports = DoneAction;
+export default DoneAction;

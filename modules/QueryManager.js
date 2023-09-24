@@ -605,4 +605,5 @@ class QueryManager {
     }
 
 }
-module.exports = QueryManager;
+
+export default QueryManager;

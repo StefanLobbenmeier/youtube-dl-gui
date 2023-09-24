@@ -27,4 +27,4 @@ async function afterPack({targets, appOutDir}) {
     });
 }
 
-module.exports = afterPack;
+export default afterPack;

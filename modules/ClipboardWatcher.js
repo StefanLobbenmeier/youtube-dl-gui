@@ -41,4 +41,4 @@ class ClipboardWatcher {
     }
 }
 
-module.exports = ClipboardWatcher;
+export default ClipboardWatcher;

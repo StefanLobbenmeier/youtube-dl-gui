@@ -18,4 +18,4 @@ class DetectPython {
     }
 }
 
-module.exports = DetectPython;
+export default DetectPython;

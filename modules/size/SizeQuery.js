@@ -75,4 +75,4 @@ class SizeQuery extends Query {
     }
 }
 
-module.exports = SizeQuery;
+export default SizeQuery;

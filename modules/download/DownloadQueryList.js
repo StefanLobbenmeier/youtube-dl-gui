@@ -82,4 +82,4 @@ class DownloadQueryList {
     }
 }
 
-module.exports = DownloadQueryList;
+export default DownloadQueryList;

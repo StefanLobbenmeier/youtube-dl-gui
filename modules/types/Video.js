@@ -136,4 +136,5 @@ class Video {
         }
     }
 }
-module.exports = Video;
+
+export default Video;

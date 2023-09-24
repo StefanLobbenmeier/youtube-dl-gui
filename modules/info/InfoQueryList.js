@@ -56,4 +56,4 @@ class InfoQueryList {
 
 }
 
-module.exports = InfoQueryList;
+export default InfoQueryList;

@@ -176,4 +176,4 @@ class BinaryUpdater {
     }
 }
 
-module.exports = BinaryUpdater;
+export default BinaryUpdater;

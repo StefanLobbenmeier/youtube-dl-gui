@@ -240,4 +240,4 @@ class Filepaths {
     }
 }
 
-module.exports = Filepaths;
+export default Filepaths;

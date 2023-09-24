@@ -171,4 +171,4 @@ class FfmpegUpdater {
     }
 }
 
-module.exports = FfmpegUpdater;
+export default FfmpegUpdater;

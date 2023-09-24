@@ -47,4 +47,5 @@ class Format {
         return new Format(height, fps)
     }
 }
-module.exports = Format;
+
+export default Format;
