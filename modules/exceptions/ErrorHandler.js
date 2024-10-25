@@ -59,6 +59,7 @@ class ErrorHandler {
         if(video.type === "playlist") return;
         let errorDef = {
             identifier: identifier,
+            url: video.url ,
             error_id: Utils.getRandomID(8),
             unexpected: true,
             error: {
