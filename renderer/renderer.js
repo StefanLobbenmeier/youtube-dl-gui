@@ -1011,7 +1011,7 @@ async function getSettings() {
     $('#sizeSetting').val(settings.sizeMode);
     $('#splitMode').val(settings.splitMode);
     $('#theme').val(settings.theme);
-    $('#version').html("<strong>Version: </strong>" + settings.version);
+    $('#version').html("<strong>Version: </strong><a href='https://github.com/StefanLobbenmeier/youtube-dl-gui/releases/tag/v" + settings.version + "' target='_blank'>" + settings.version + " &#128279;</a>");
     window.settings = settings;
 }
 
