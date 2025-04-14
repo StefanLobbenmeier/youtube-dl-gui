@@ -137,6 +137,9 @@ class DownloadQuery extends Query {
         if(this.environment.settings.downloadMetadata) {
             args.push('--add-metadata');
         }
+        if(this.environment.settings.compatFilename) {
+            args.push('--restrict-filenames');
+        }
         if(this.environment.settings.downloadThumbnail) {
             args.push('--write-thumbnail');
         }

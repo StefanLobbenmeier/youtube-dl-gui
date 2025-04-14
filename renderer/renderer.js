@@ -1000,6 +1000,7 @@ async function getSettings() {
     $('#sponsorblockApi').val(settings.sponsorblockApi);
     $('#downloadMetadata').prop('checked', settings.downloadMetadata);
     $('#downloadJsonMetadata').prop('checked', settings.downloadJsonMetadata);
+    $('#compatFilename').prop('checked', settings.compatFilename);
     $('#downloadThumbnail').prop('checked', settings.downloadThumbnail);
     $('#keepUnmerged').prop('checked', settings.keepUnmerged);
     $('#avoidFailingToSaveDuplicateFileName').prop('checked', settings.avoidFailingToSaveDuplicateFileName);
@@ -1036,6 +1037,7 @@ function sendSettings() {
         sponsorblockApi: $('#sponsorblockApi').val(),
         downloadMetadata: $('#downloadMetadata').prop('checked'),
         downloadJsonMetadata: $('#downloadJsonMetadata').prop('checked'),
+        compatFilename: $('#compatFilename').prop('checked'),
         downloadThumbnail: $('#downloadThumbnail').prop('checked'),
         keepUnmerged: $('#keepUnmerged').prop('checked'),
         avoidFailingToSaveDuplicateFileName: $('#avoidFailingToSaveDuplicateFileName').prop('checked'),
