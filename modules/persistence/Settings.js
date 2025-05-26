@@ -32,7 +32,7 @@ class Settings {
         this.sponsorblockApi = sponsorblockApi == null ? "https://sponsor.ajay.app" : sponsorblockApi;
         this.downloadMetadata = downloadMetadata == null ? true : downloadMetadata;
         this.downloadJsonMetadata = downloadJsonMetadata == null ? false : downloadJsonMetadata;
-        this.downloadJsonMetadata = compatFilename == null ? false : compatFilename;
+        this.compatFilename = compatFilename == null ? false : compatFilename;
         this.downloadThumbnail = downloadThumbnail == null ? false : downloadThumbnail;
         this.keepUnmerged = keepUnmerged == null ? false : keepUnmerged;
         this.avoidFailingToSaveDuplicateFileName = avoidFailingToSaveDuplicateFileName == null ? false : avoidFailingToSaveDuplicateFileName;
