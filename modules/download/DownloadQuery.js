@@ -193,6 +193,10 @@ class DownloadQuery extends Query {
                     return;
                 }
 
+                if (typeof liveDataObj !== 'object' || liveDataObj === null) {
+                    return;
+                }
+
                 let percentage;
                 if ("fragment_count" in liveDataObj) {
                     //When there is multiple fragments, cap the completion percentage to avoid some strange values.
