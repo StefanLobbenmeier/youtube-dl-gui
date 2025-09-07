@@ -46,6 +46,7 @@ const defaultSettings = {
   sponsorblockApi: 'https://sponsor.ajay.app',
   downloadMetadata: true,
   downloadJsonMetadata: false,
+  compatFilename: false,
   downloadThumbnail: false,
   keepUnmerged: false,
   avoidFailingToSaveDuplicateFileName: false,
