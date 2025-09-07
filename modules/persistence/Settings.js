@@ -8,7 +8,7 @@ class Settings {
         proxy, rateLimit, autoFillClipboard, noPlaylist, globalShortcut, userAgent,
         validateCertificate, enableEncoding, taskList, nameFormat, nameFormatMode,
         sizeMode, splitMode, maxConcurrent, retries, fileAccessRetries, updateBinary, downloadType, updateApplication, cookiePath,
-        statSend, sponsorblockMark, sponsorblockRemove, sponsorblockApi, downloadMetadata, downloadJsonMetadata,
+        statSend, sponsorblockMark, sponsorblockRemove, sponsorblockApi, downloadMetadata, downloadJsonMetadata, compatFilename,
         downloadThumbnail, keepUnmerged, avoidFailingToSaveDuplicateFileName, calculateTotalSize, theme
     ) {
         this.paths = paths;
@@ -32,6 +32,7 @@ class Settings {
         this.sponsorblockApi = sponsorblockApi == null ? "https://sponsor.ajay.app" : sponsorblockApi;
         this.downloadMetadata = downloadMetadata == null ? true : downloadMetadata;
         this.downloadJsonMetadata = downloadJsonMetadata == null ? false : downloadJsonMetadata;
+        this.compatFilename = compatFilename == null ? false : compatFilename;
         this.downloadThumbnail = downloadThumbnail == null ? false : downloadThumbnail;
         this.keepUnmerged = keepUnmerged == null ? false : keepUnmerged;
         this.avoidFailingToSaveDuplicateFileName = avoidFailingToSaveDuplicateFileName == null ? false : avoidFailingToSaveDuplicateFileName;
@@ -97,6 +98,7 @@ class Settings {
                 data.sponsorblockApi,
                 data.downloadMetadata,
                 data.downloadJsonMetadata,
+                data.compatFilename,
                 data.downloadThumbnail,
                 data.keepUnmerged,
                 data.avoidFailingToSaveDuplicateFileName,
@@ -131,6 +133,7 @@ class Settings {
         this.sponsorblockApi = settings.sponsorblockApi;
         this.downloadMetadata = settings.downloadMetadata;
         this.downloadJsonMetadata = settings.downloadJsonMetadata;
+        this.compatFilename = settings.compatFilename;
         this.downloadThumbnail = settings.downloadThumbnail;
         this.keepUnmerged = settings.keepUnmerged;
         this.avoidFailingToSaveDuplicateFileName = settings.avoidFailingToSaveDuplicateFileName;
@@ -186,6 +189,7 @@ class Settings {
             sponsorblockApi: this.sponsorblockApi,
             downloadMetadata: this.downloadMetadata,
             downloadJsonMetadata: this.downloadJsonMetadata,
+            compatFilename: this.compatFilename,
             downloadThumbnail: this.downloadThumbnail,
             keepUnmerged: this.keepUnmerged,
             avoidFailingToSaveDuplicateFileName: this.avoidFailingToSaveDuplicateFileName,
