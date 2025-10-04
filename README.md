@@ -23,13 +23,24 @@ A cross-platform GUI for youtube-dl made in Electron and node.js
 
 Be sure to check out [a demo gif of the application](#Demo-gif)!
 
-## How to use
+## Installation
+
+### Windows
 1. Download the [applicable installer or executable](https://github.com/StefanLobbenmeier/youtube-dl-gui/releases/latest) for your system.
 2. If you are on windows, make sure that the [Microsoft Visual C++ 2010 Redistributable Package (x86)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) is installed. 
 3. Paste a link into the box up top.
 4. Wait for the app to gather all required metadata.
 5. Press download, and the video(s) will get downloaded to your downloads folder.
+   
+### Arch Linux
+Open Video Downloader (youtube-dl-gui) is available on the [AUR](https://aur.archlinux.org/packages/youtube-dl-gui).  
+You can install it using your favorite AUR helper:
 
+```bash
+yay -S youtube-dl-gui
+# or
+paru -S youtube-dl-gui
+```
 Want to know more about the features this app offers? Head over to the [wiki](https://github.com/StefanLobbenmeier/youtube-dl-gui/wiki/).
 
 ## Supporting the project
